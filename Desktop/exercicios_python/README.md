@@ -19,3 +19,13 @@ Caso o salário atual seja maior que R$ 2.000,00 receberá 7% de aumento.
 Caso contrário, receberá 15% de aumento.
 
 - [X] - 4. Escreva uma função que recebe como parâmetro de entrada um número N positivo, e retorna o fatorial de n.
+
+- [X] - 9. Preencha uma lista com 10 números digitados pelo usuárioe exiba:
+           - o maior número 
+           - o menor número
+           - a média dos números 
+           - todos os números menores que a media calculada.
+- [X] - 10. Faça um programa que simule um lançamento de dados. Lance o dado 10 vezes e armazene os resultados em uma lista. Depois, informe quantas vezes cada número foi sorteado.
+
+- [X] - 11.Escreva uma função chamada intercala que recebe como entrada duas tuplas de três elementos cada e retorna uma tupla de seis elementos, intercalando as duas tuplas.
+Crie um módulo com essa função e importe esse módulo em outro programa. Neste outro programa, peça para o usuário preencher as duas tuplas, chame a função intercala e exiba o retorno da função.
