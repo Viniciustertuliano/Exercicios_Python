@@ -20,6 +20,14 @@ Caso contrário, receberá 15% de aumento.
 
 - [X] - 4. Escreva uma função que recebe como parâmetro de entrada um número N positivo, e retorna o fatorial de n.
 
+- [X] - 5. Escreva uma função que recebe como parâmetro um número N e exibe todos os divisores desse número.
+
+- [X] - 6. Escreva uma função que recebe como parâmetro um número N e retorna a soma de todos os divisores desse número.
+
+- [X] - 7. Escreva uma função que receba como parâmetro um número N e retorna True se esse número for primo, e False caso não seja primo.
+
+- [X] - 8. Escreva uma função que receba como parâmetro um número N e exibe todos os número primos menores que N.
+
 - [X] - 9. Preencha uma lista com 10 números digitados pelo usuárioe exiba:
            - o maior número 
            - o menor número
