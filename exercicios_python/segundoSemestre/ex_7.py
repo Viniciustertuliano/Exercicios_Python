@@ -3,5 +3,6 @@ def divi(n):
         print(True)
     else:
         print(False)
-        
+
+
 divi(int(input("Digite um numero: ")))

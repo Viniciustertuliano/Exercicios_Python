@@ -1,4 +1,4 @@
-def fat (num):
+def fat(num):
     c = num
     f = 1
     print('calculando {}! = '.format(num), end="")
@@ -8,5 +8,7 @@ def fat (num):
         f *= c
         c -= 1
     print('{}'.format(f))
+
+
 num = int(input())
 fat(num)
