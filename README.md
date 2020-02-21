@@ -37,3 +37,9 @@ Caso contrário, receberá 15% de aumento.
 
 - [X] - 11.Escreva uma função chamada intercala que recebe como entrada duas tuplas de três elementos cada e retorna uma tupla de seis elementos, intercalando as duas tuplas.
 Crie um módulo com essa função e importe esse módulo em outro programa. Neste outro programa, peça para o usuário preencher as duas tuplas, chame a função intercala e exiba o retorno da função.
+
+- [X] - 12.Crie um dicionário vazio chamado produtos. Preencha o dicionários com 5 produtos. Utilize o nome do produto como chave e o preço do produto como valor. Em seguida, exiba o nome dos produtos com valor superior a R$50.00
+
+
+- [X] - 13.Escreva um programa que solicita o nome e as duas notas de cada um de três alunos. Armazene as notas em um dicionário, onde a chave é o nome do aluno e o valor uma lista com as duas notas. Escreva a função calcular_media que recebe como parâmetro o dicionário e o nome de um aluno e retorna sua média.
+
