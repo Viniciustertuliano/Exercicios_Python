@@ -43,3 +43,10 @@ Crie um módulo com essa função e importe esse módulo em outro programa. Nest
 
 - [X] - 13.Escreva um programa que solicita o nome e as duas notas de cada um de três alunos. Armazene as notas em um dicionário, onde a chave é o nome do aluno e o valor uma lista com as duas notas. Escreva a função calcular_media que recebe como parâmetro o dicionário e o nome de um aluno e retorna sua média.
 
+
+## Atividades Continuas 
+
+Atividades para testar o conhecimento de acordo com a materia apresentada em aula.
+
+- [X] - ac01 
+
