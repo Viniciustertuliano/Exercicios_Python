@@ -1,6 +1,5 @@
 # nome: Vinicius Tertuliano da silva Ra:1901646
 # nome: Adalberto gonçalves lira junior RA:1901584
-dados = []
 
 
 def salar(dados):
