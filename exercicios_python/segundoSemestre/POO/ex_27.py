@@ -13,7 +13,7 @@ class Animal():
 
 class Cachorro(Animal):
     def __init__(self, nome, cor, num_patas, raca):
-        super().__init__(self, nome, cor, num_patas)
+        super().__init__(nome, cor, num_patas)
         self.raca = raca
 
     def exibir_dados(self):
