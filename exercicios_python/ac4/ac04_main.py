@@ -1,4 +1,4 @@
-from ac04_banco_paulo import Cliente, Banco, Conta
+from ac04_banco import Cliente, Banco, Conta
 
 
 # ------------------------ CLIENTE --------------------------------------
