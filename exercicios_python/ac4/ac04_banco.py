@@ -1,8 +1,8 @@
 # Linguagem de Programação II
 # AC04 - Banco
 #
-# Nome Aluno 1: vinicius Tertuliano
-# Nome Aluno 2: nome
+# Nome Aluno 1: Vinicius Tertuliano
+# Nome Aluno 2: Abner de Melo Porto
 # Nome Aluno 3: nome
 
 
@@ -39,9 +39,9 @@ class Cliente():
         """
 
         if novo_telefone == int:
-            raise TypeError('Valor informado não é inteiro')
-        else:
             self.__telefone = novo_telefone
+        else:
+            raise TypeError('Valor informado não é inteiro')
 
     def get_email(self):
         """Retorna o atributo Email."""
@@ -90,7 +90,14 @@ class Banco:
         Caso o saldo inicial seja menor que 0 gera um ValueError
         Armazena todas as contas abertas na lista self.__lista_contas
         """
-        pass
+        
+        if saldo >= 0:
+            Conta.self.__saldo = saldo
+        else:
+            raise ValueError("Saldo inicial inválido")
+
+        self.listar_contas.append(Conta)
+
 
     def listar_contas(self):
         """Retorna lista com todas as contas abertas no banco"""
@@ -118,15 +125,15 @@ class Conta:
 
     def get_cliente(self):
         """Retorna o atributo cliente."""
-        pass
+        return self.__cliente
 
     def get_saldo(self):
         """Retorna o atributo saldo"""
-        pass
+        return self.__saldo
 
     def get_numero(self):
         """Retorna o atributo numero"""
-        pass
+        return self.__numero
 
     def sacar(self, valor: float):
         """
@@ -134,11 +141,13 @@ class Conta:
         Caso o valor do saque seja maior que o saldo da conta,
         deve gerar um ValueError, e não efetuar o saque
         """
-        pass
+        if valor > self.__saldo:
+            raise ValueError('Valor maior que o saldo atual.')
+        else:self.__saldo-=valor, self.__operacoes.append({'saque':[valor]})
 
     def depositar(self, valor: float):
         """Realiza depósito na Conta, operação deve aparecer no extrato"""
-        pass
+        self.__saldo+=valor, self.__operacoes.append({'deposito':[valor]})
 
     def extrato(self):
         """
