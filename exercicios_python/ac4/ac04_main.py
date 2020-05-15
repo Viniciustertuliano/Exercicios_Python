@@ -34,8 +34,10 @@ print(c.get_saldo())                        # 350
 
 # Verifica o extrato da conta
 extrato = c.extrato()
-print(len(extrato))                         # 4 (foram feitas quatro operações na conta)
-print(extrato)                              # [('saldo_inicial', 300), ('deposito', 250), ('saque', 50), ('saque', 150)]
+# 4 (foram feitas quatro operações na conta)
+print(len(extrato))
+# [('saldo_inicial', 300), ('deposito', 250), ('saque', 50), ('saque', 150)]
+print(extrato)
 
 # ------------------------ BANCO ---------------------------------------
 
@@ -53,7 +55,8 @@ b.abrir_conta(cli, 1000)
 
 # Lista de contas no banco
 lista = b.listar_contas()
-print(len(lista))                           # 2 (deve ter dois objetos Conta na lista)
+# 2 (deve ter dois objetos Conta na lista)
+print(len(lista))
 
 # dados da primeira conta
 print(lista[0].get_numero())                # 1
@@ -78,10 +81,15 @@ print(lista[1].get_saldo())                 # 2150
 
 # Verifica o extrato da primeira conta
 extrato = lista[0].extrato()
-print(len(extrato))                         # 3 (foram feitas três operações na conta)
-print(extrato)                              # [('saldo_inicial', 500), ('deposito', 250), ('saque', 50)]
+# 3 (foram feitas três operações na conta)
+print(len(extrato)) 
+# [('saldo_inicial', 500), ('deposito', 250), ('saque', 50)]
+print(extrato)
 
 # Verifica o extrato da segunda conta
 extrato = lista[1].extrato()
-print(len(extrato))                         # 4 (foram feitas quatro operações na conta)
-print(extrato)                              # [('saldo_inicial', 1000), ('deposito', 1000), ('deposito', 300), ('saque', 150)]
+# 4 (foram feitas quatro operações na conta)
+print(len(extrato))
+# [('saldo_inicial', 1000), ('deposito', 1000),
+# ('deposito', 300), ('saque', 150)]
+print(extrato)
