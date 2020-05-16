@@ -38,7 +38,7 @@ class Cliente():
         Caso não receba um número inteiro, gera um TypeError
         """
 
-        if novo_telefone == int:
+        if isinstance(novo_telefone, int):
             self.__telefone = novo_telefone
         else:
             raise TypeError('Valor informado não é inteiro')
@@ -90,14 +90,14 @@ class Banco:
         Caso o saldo inicial seja menor que 0 gera um ValueError
         Armazena todas as contas abertas na lista self.__lista_contas
         """
-        
-        if saldo >= 0:
-            Conta.self.__saldo = saldo
+        if saldo < 0:
+            raise ValueError('Conta não pode ser aberta com saldo negativo.')
         else:
-            raise ValueError("Saldo inicial inválido")
-
-        self.listar_contas.append(Conta)
-
+            i = len(self.__lista_contas)
+            id_con = i + 1
+            conta = Conta(cliente, id_con, saldo)
+            self.__lista_contas.append(conta)
+        pass
 
     def listar_contas(self):
         """Retorna lista com todas as contas abertas no banco"""
@@ -122,6 +122,7 @@ class Conta:
         self.__numero = numero
         self.__saldo = saldo
         self.__operacoes = []
+        self.__operacoes.append(["saldo_inicial", saldo])
 
     def get_cliente(self):
         """Retorna o atributo cliente."""
@@ -143,11 +144,14 @@ class Conta:
         """
         if valor > self.__saldo:
             raise ValueError('Valor maior que o saldo atual.')
-        else:self.__saldo-=valor, self.__operacoes.append({'saque':[valor]})
+        else:
+            self.__saldo -= valor
+            return self.__operacoes.append(["saque", valor])
 
     def depositar(self, valor: float):
         """Realiza depósito na Conta, operação deve aparecer no extrato"""
-        self.__saldo+=valor, self.__operacoes.append({'deposito':[valor]})
+        self.__saldo += valor
+        return self.__operacoes.append(["deposito", valor])
 
     def extrato(self):
         """
@@ -155,4 +159,4 @@ class Conta:
         (saldo inicial, saque e deposito),
         exemplo: [('saldo_inicial', 500), ('saque', 100), ('deposito', 200)]
         """
-        pass
+        return self.__operacoes
